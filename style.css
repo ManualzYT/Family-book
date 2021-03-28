@@ -11,18 +11,3 @@ border-color: black;
 
 
 
-button.next{
-height: 25px;
-width: 30px;
-background: green;
-x: 200px;
-y: 200px
-}
-
-button.back{
-height: 25px;
-width: 30px;
-background: darkred;
-x: 200px;
-y: 250px
-}
