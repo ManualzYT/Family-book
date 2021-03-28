@@ -1,23 +1,36 @@
-<html>
-<head>
-    <title>My family</title>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-
-
-<h1>My Family Book</h1>
-<img src="maxresdefault.jpg">
-<h4>Manvel Simonyan (Me)</h4>
-<button onclick = "next();">Next</button>
-
-
-
-
-</body>
-
-
-
-
-
+      <meta charset="UTF-8">
+      <meta name="viewport" 
+            content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+               <h1 id="message">
+                   Family Book
+               </h1>
+               <img  id="myImage" 
+                     src="maxresdefault.jpg"  >
+            </div>
+            <div class="col-md-3"></div>
+         </div>
+      </div>
+      <div class="button">
+         <button class="button.back" 
+                 onclick=before();>
+            Back
+         </button>
+         <button  class="button.next" 
+                  onclick=nextslide();>
+             Next
+         </button>
+      </div>
+   </body>
 </html>
