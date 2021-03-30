@@ -1,13 +1,18 @@
-  
-var images = [
-    "maxresdefault.jpg",
-    "1580434668566 (1).jpg",
-    "download.jpg",
-    "10906575_732597830169922_4919127290685897003_n.jpg",
-    ];
+
+
+var array_names_of_family = [ "Manvel Simonyan" , "Inessa Simonyan" , "Harutyun Simonyan" , "Narine Marandyan" ]; 
+var array_images_of_family = [ "Me.jpg" , "Inessa.jpg" , "Dad.jpg" , "Mom.jpg" ]; 
+
 var i = 0; 
 function nextslide() {
-if (i == 4) { i=0;}
+i++;
+var numbers_of_family_members = 4
+if (i>numbers_of_family_members)
+{
+i=0;    
 }
-var array_names_of_family = [ "Manvel Simonyan" , "Inessa Simonyan" , "Harutyun Simonyan" , "Narine Marandyan" ]; 
-var array_images_of_family = [ "maxresdefault.jpg" , "1580434668566 (1).jpg" , "download.jpg" , "10906575_732597830169922_4919127290685897003_n.jpg" ]; 
+var updated_image = array_images_of_family[i];
+var updated_name = array_names_of_family[i];
+document.getElementById("family_member_image").src = updated_image;
+document.getElementById("family_member_name").innerHTML =updated_name; 
+}
